@@ -29,7 +29,7 @@ public class Spring5webappApplication {
 				.getBean("setterInjectedController");
 		System.out.println(setterInjectedController.getGreeting());
 		
-		System.out.println("--------------Setter");
+		System.out.println("--------------Cnstructor");
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController)ctx
 				.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());

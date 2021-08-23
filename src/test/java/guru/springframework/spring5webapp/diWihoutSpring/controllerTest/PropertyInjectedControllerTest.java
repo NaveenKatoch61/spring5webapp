@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import guru.springframework.spring5webapp.diWithAndWihoutSpring.controller.PropertyInjectedController;
-import guru.springframework.spring5webapp.diWithAndWihoutSpring.services.GreetingServiceImpl;
+import guru.springframework.spring5webapp.diWithAndWihoutSpring.services.ConstructorGreetingServiceImpl;
 
 public class PropertyInjectedControllerTest {
 
@@ -13,7 +13,7 @@ public class PropertyInjectedControllerTest {
 	@Before
 	public void setUp() {
 		controller = new PropertyInjectedController();
-		controller.greetingService = new GreetingServiceImpl();
+		controller.greetingService = new ConstructorGreetingServiceImpl();
 
 	}
 

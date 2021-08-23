@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import guru.springframework.spring5webapp.diWithAndWihoutSpring.controller.SetterInjectedController;
-import guru.springframework.spring5webapp.diWithAndWihoutSpring.services.GreetingServiceImpl;
+import guru.springframework.spring5webapp.diWithAndWihoutSpring.services.ConstructorGreetingServiceImpl;
 
 public class SetterInjectedControllerTest {
 
@@ -13,7 +13,7 @@ public class SetterInjectedControllerTest {
 	@Before
 	public void setUp() {
 		controller = new SetterInjectedController();
-		controller.setGreetingService(new GreetingServiceImpl());
+		controller.setGreetingService(new ConstructorGreetingServiceImpl());
 
 	}
 
