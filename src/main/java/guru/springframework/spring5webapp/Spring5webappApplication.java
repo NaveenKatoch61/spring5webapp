@@ -3,12 +3,15 @@ package guru.springframework.spring5webapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import guru.springframework.spring5webapp.diWithAndWihoutSpring.controller.ConstructorInjectedController;
 import guru.springframework.spring5webapp.diWithAndWihoutSpring.controller.MyController;
 import guru.springframework.spring5webapp.diWithAndWihoutSpring.controller.PropertyInjectedController;
 import guru.springframework.spring5webapp.diWithAndWihoutSpring.controller.SetterInjectedController;
 
+
+//@ComponentScan(basePackages= {"guru.springframework", "guru"})
 @SpringBootApplication
 public class Spring5webappApplication {
 
