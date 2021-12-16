@@ -1,8 +1,7 @@
 package guru.springframework.spring5webapp.diWithAndWihoutSpring.services;
 
-import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class PropertyGreetingServiceImpl implements GreetingService{
 
 	@Override
